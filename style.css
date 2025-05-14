@@ -138,18 +138,18 @@ footer a img {
 
 
 /*adaptação para celular*/
-@media (max-width: 768px) {
-  .challenge {
-    flex-direction: column; /* Empilha verticalmente no celular */
-    align-items: center;
-    text-align: center;
-  }
+@media (min-width: 400px) {
+    .portifolio-decodificador {
+        flex-direction: column; /* Empilha verticalmente no celular */
+        align-items: center;
+        text-align: center;
+    }
 
-  section div img {
-    margin: 0;
-}
+    section div img {
+        margin: 0;
+    }
 
-nav ul li a {
-    padding: 17px 7px;
-}
+    nav ul li a {
+        padding: 17px 7px;
+    }
 }
