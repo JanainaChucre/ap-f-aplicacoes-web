@@ -1,0 +1,155 @@
+:root{
+    --cor-principal: #280a3a;
+}
+
+html {
+  scroll-padding-top: 25px; /*para não esconder o h1 quando clicar em um link*/
+}
+
+body { /* cor de fundo e fonte*/
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: beige;
+}
+
+nav { /*barra de navegação fixada no topo*/
+    background-color: var(--cor-principal);
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul { /*links da barra de navegação na horizontal*/
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+nav ul li a {
+    text-decoration: none;
+    padding: 17px;
+    color: beige;
+
+}
+
+nav ul li a:hover { /* muda a cor de fundo e de fonte quando o cursor passa em cima*/
+    color: rgb(0, 0, 0);
+    background-color: beige;
+}
+
+section { /* largura máxima das seções*/
+    padding: 10px;
+    max-width: 800px;
+    margin: auto;
+  }
+
+#sobre-mim { /* adiciona distância entre a barra de navegação e a primeira seção*/
+    padding-top: 60px;
+}
+
+h1 { /*define a cor dos títulos*/
+    color: var(--cor-principal);
+}
+
+p {
+    text-align: justify;
+}
+
+.texto-formacao {
+    font-weight: bold;
+}
+
+.portifolio-decodificador { /* visualização da imagem e do texto na horizontal*/
+    display: flex;
+}
+
+
+section div img {
+    max-width: 400px; /*tamanho máximo da imagem*/
+    margin-right: 20px; /*margem para distanciar a imagem do texto*/
+    border: 1px solid;
+    border-color: var(--cor-principal);
+}
+
+section div img:hover { 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /*adiciona sombra quando o cursor passa em cima da imagem*/
+}
+
+section div h2 {
+    font-size: 16px;
+}
+
+.github-link {
+    color: var(--cor-principal);
+}
+
+#contato div{ /*mostra o formulário no meio da página*/
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    max-width: 600px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    gap: 1px;
+  }  
+
+.campo input,
+.campo textarea {
+    width: 400px;
+    padding: 10px;
+    flex: 1;
+}
+
+form button {
+    width: 100%;
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+form button:hover {
+    background-color: #5a366e;
+}
+
+footer {
+    padding: 3px;
+    background-color: #a78db6;
+}
+
+footer p {
+    text-align: center;
+  }
+
+footer a img {
+    width: 2rem;
+}
+
+
+/*adaptação para celular*/
+@media (max-width: 768px) {
+  .challenge {
+    flex-direction: column; /* Empilha verticalmente no celular */
+    align-items: center;
+    text-align: center;
+  }
+
+  section div img {
+    margin: 0;
+}
+
+nav ul li a {
+    padding: 17px 7px;
+}
+}
