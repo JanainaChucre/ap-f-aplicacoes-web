@@ -67,14 +67,14 @@ p {
 }
 
 
-section div img {
+.portifolio-decodificador img {
     max-width: 400px; /*tamanho máximo da imagem*/
     margin-right: 20px; /*margem para distanciar a imagem do texto*/
     border: 1px solid;
     border-color: var(--cor-principal);
 }
 
-section div img:hover { 
+.portifolio-decodificador img:hover { 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /*adiciona sombra quando o cursor passa em cima da imagem*/
 }
 
@@ -138,9 +138,35 @@ footer a img {
 
 
 /*adaptação para celular*/
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+    nav ul li a {
+        padding: 17px 7px;
+    }
+
     .portifolio-decodificador {
         flex-direction: column; /* Empilha verticalmente no celular */
+        align-items: center;
+        text-align: center;
+    }
+
+    .portifolio-decodificador img {
+        max-width: 300px;
+        height: auto;
+        margin: 0;
+    }
+
+    form{
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul li a {
+        padding: 17px 7px;
+    }
+
+    .portifolio-decodificador {
+        flex-direction: column;
         align-items: center;
         text-align: center;
     }
@@ -149,7 +175,12 @@ footer a img {
         margin: 0;
     }
 
-    nav ul li a {
-        padding: 17px 7px;
+    .portifolio-decodificador img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    form{
+        max-width: 90%;
     }
 }
