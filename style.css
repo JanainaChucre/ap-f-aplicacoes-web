@@ -91,12 +91,7 @@ section div h2 {
     justify-content: center;
 }
 
-form{
-    max-width: 600px;
-}
-
 .campo {
-    display: flex;
     flex-direction: column;
     margin-bottom: 15px;
     gap: 1px;
@@ -156,7 +151,12 @@ footer a img {
     }
 
     form{
-        max-width: 90%;
+        max-width: 100%;
+    }
+
+    .campo input,
+    .campo textarea {
+        width: 100%;
     }
 }
 
@@ -171,16 +171,17 @@ footer a img {
         text-align: center;
     }
 
-    section div img {
-        margin: 0;
-    }
-
     .portifolio-decodificador img {
-        max-width: 300px;
+        width: 300px;
         height: auto;
     }
 
     form{
-        max-width: 90%;
+        max-width: 100%;
+    }
+
+    .campo input,
+    .campo textarea {
+        width: 100%;
     }
 }
